@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+
+  <div class="successfullySent-container">
+
+    <div style="display: flex;">
+      
+      <img src="assets/images/check_circle_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      <div id="messageSent">Message Sent!</div>
+
+    </div>
+
+    <div id="successMessage">Thanks for completing the form. We'll be in touch soon!</div>
+
+  </div>
+
+
+  <!-- this is the main container -->
+  <div class="main">
+
+    <h1 class="Contact-Us">Contact Us</h1>
+
+<!-- this is the names container for the first name and last name -->
+
+    <div class="names">
+      
+      <div class="first-name">
+
+        <label for="firstName" class="firstName">First Name</label>
+
+        <input type="text" id="firstName">
+
+        <div class="error-message" id="first-name-errormessage">This Field is required</div>
+
+      </div>
+
+      <div class="last-name">
+
+        <label for="lastName" class="lastName">Last Name</label>
+
+        <input type="text" id="lastName">
+
+        <div class="error-message" id="last-name-errormessage">This Field is required</div>
+
+      </div>
+
+    </div>
+
+    <!-- this is the email container for the email adress -->
+    <div class="email-address">
+
+      <label for="email-adress" class="emailAddress">Email Address</label>
+
+      <input type="text" id="email-address">
+
+      <div class="error-message" id="email-error-message">Please enter a valid email address</div>
+
+    </div>
+
+    <!-- this is the query type container -->
+    <div class="query-type">
+
+      <div class="query">Query Type</div>
+
+      <div class="sub-query-container">
+
+        <div class="radio-image-query">
+
+          <div class="radio-image">
+  
+            <img src="assets/images/radio_button_unchecked_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="radio-btn" class="radio-btn">
+          </div>
+  
+          <div class="general-Enquiry">General Enquiry</div>
+  
+        </div>
+  
+  <!-- this is the support request container -->
+        <div class="radio-image-query">
+  
+          <div class="radio-image">
+  
+            <img src="assets/images/radio_button_unchecked_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="radio-btn" class="radio-btn">
+            
+          </div>
+  
+          <div class="support-request">Support Request</div>
+  
+        </div>
+  
+      </div>
+
+      <div class="error-message queryErrorMEssage" >Please select query type</div>
+
+      </div>
+
+      
+
+    <!-- The message container -->
+    <div class="message-container">
+
+      <div class="sub-message-container">
+
+        <label for="message" class="message">Message</label>
+
+        <!-- <input type="text" id="message"> -->
+        <textarea rows="desired number of rows" id="message"></textarea>
+
+      </div>
+
+      <div class="error-message messageInputErrorMessage">This field is required</div>
+
+    </div>
+
+    <!-- the agreement container  -->
+    <div class="agreement-container">
+
+      <div class="sub-agreement-container">
+
+        <img src="assets/images/check_box_outline_blank_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="checkbox">
+
+        <label for="checkbox" class="checkbox">I consent to being contacted by team</label>
+
+      </div>
+
+      <div class="error-message" id="consentErrorMessage">To submit this form, please consent to being contacted</div>
+
+    </div>
+
+    <button id="submit">Submit</button>
+
+  </div>
+
+</body>
+</html>
