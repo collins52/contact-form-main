@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-size: 16px; */
     font-family: 'Karla Variable';
     color: var(--Dark-Grey);
 }
@@ -39,8 +38,8 @@
 
 body{
     background-color: var(--Light-Green);
-    /* padding-top: 80px; */
 }
+
 .successfullySent-container{
     background-color: var(--Dark-Grey);
     width: 80%;
@@ -52,18 +51,18 @@ body{
     border-radius: 8px;
 
 }
+
 #successMessage, #messageSent{
     color: var(--White);
-    /* border: 1px solid red; */
     padding: 7px;
 }
 
 .error-message{
     color: var(--Red);
     margin-top: 5px;
-    /* display: none; */
     visibility: hidden;
 }
+
 .firstName::after, .lastName::after, .emailAddress::after, .query::after, .message::after, .checkbox::after{
     content: '*';
     margin-left: 5px;
@@ -84,26 +83,17 @@ body{
 }
 
 #firstName:focus, #lastName:focus, #email-address:focus, #message:focus{
-    /* border-color: var(--Green); */
     border: 1.51px  solid var(--Green);
     outline: none;
 }
-/* #radio-btn:hover{
-    cursor: pointer;
-} */
+
 .radio-image-query{
     cursor: pointer;
 }
 
-/* #message{
-    word-break: break-all;
-    overflow-wrap: break-word;
-    white-space: normal;
-    overflow: scroll;
-} */
-
-/* Mobile design */
+/* ------------------Mobile design -------------------*/
 @media  screen and (max-width: 600px) {
+
     .main{
         background-color: var(--White);
         display: flex;
@@ -112,18 +102,20 @@ body{
         border-radius: 12px;
         padding: 5px 5px 30px 5px;
     }
+
     .main *{
         padding: 2px;
     }
+
     .Contact-Us{
-        /* border: 1px solid green; */
         width: 170px;
     }
+
     .names{
         display: flex;
         flex-direction: column;
-        /* border: 1px solid black; */
     }
+
     .first-name, .last-name {
         display: flex;
         flex-direction: column;
@@ -137,9 +129,7 @@ body{
     .email-address {
         display: flex;
         flex-direction: column;
-        /* border: 1px solid yellow; */
     }
-    /* query type container */
     
     .radio-image-query{
         display: flex;
@@ -149,26 +139,20 @@ body{
         border-radius: 5px;
         margin-top: 15px;
     }
-    /* .sub-query-container{
-        border: 1px solid blue;
-    } */
+
     .general-Enquiry, .support-request{
         margin-bottom: 4px;
     }
+
     #radio-btn{
         margin-right: 5px;
     }
-    /* messsage field */
-
-    /* .message-container{
-        border: 1px solid brown;
-    } */
 
     .sub-message-container {
-        /* border: 1px solid green; */
         display: flex;
         flex-direction: column;
     }
+
     .sub-message-container > input {
         height: 100px;
         border-radius: 5px;
@@ -180,7 +164,8 @@ body{
 
 }
 
-/* Desktop design */
+/* --------------------Desktop design ------------------------ */
+
 @media screen and (min-width: 601px) and (max-width: 1600px){
     .main{
         background-color: var(--White);
@@ -195,19 +180,19 @@ body{
     .main *{
         padding: 2px;
     }
+
     .Contact-Us{
-        /* border: 1px solid green; */
         width: 170px;
     }
+
     .names{
         display: flex;
-        /* border: 1px solid red; */
         justify-content: space-between;
     }
+
     .first-name, .last-name {
         display: flex;
         flex-direction: column;
-        /* border: 1px solid black; */
         width: 335px;
     }
     
@@ -216,12 +201,11 @@ body{
         border-radius: 5px;
         border: 1px solid var(--Medium-Grey);
     }
+
     .email-address {
         display: flex;
         flex-direction: column;
-        /* border: 1px solid yellow; */
     }
-    /* query type container */
     
     .radio-image-query{
         display: flex;
@@ -231,29 +215,26 @@ body{
         border-radius: 5px;
         width: 302px;
     }
+
     .sub-query-container{
         display: flex;
         justify-content: space-between;
-        /* border: 1px solid blue; */
     }
+
     .general-Enquiry, .support-request{
         margin-bottom: 4px;
     }
+
     #radio-btn{
         margin-right: 5px;
         
     }
 
-    /* messsage field */
-
-    /* .message-container{
-        border: 1px solid brown;
-    } */
     .sub-message-container {
-        /* border: 1px solid green; */
         display: flex;
         flex-direction: column;
     }
+
     #message{
         height: 100px;
         border-radius: 5px;
@@ -261,6 +242,7 @@ body{
         word-wrap: break-word;
         padding: 10px 15px;
     }
+
     .sub-agreement-container{
         display: flex;
     }
